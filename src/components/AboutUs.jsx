@@ -74,7 +74,6 @@ function AboutUs() {
                 <h2> Meet Our Team</h2>
                 <div className="team-grid">
                     <div className="team-member">
-                        <div className="team-avatar">🌻</div>
                         <h3>Sarah Greenfield</h3>
                         <p className="team-role">Founder & Head Plant Whisperer</p>
                         <p>
@@ -84,7 +83,6 @@ function AboutUs() {
                         </p>
                     </div>
                     <div className="team-member">
-                        <div className="team-avatar">🪴</div>
                         <h3>Marco Bloom</h3>
                         <p className="team-role">Master Grower</p>
                         <p>
@@ -93,7 +91,6 @@ function AboutUs() {
                         </p>
                     </div>
                     <div className="team-member">
-                        <div className="team-avatar">🌵</div>
                         <h3>Lin Petal</h3>
                         <p className="team-role">Customer Happiness Manager</p>
                         <p>

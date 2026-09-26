@@ -133,10 +133,10 @@ function CartItem() {
                         className="continue-shopping-btn"
                         onClick={handleContinueShopping}
                     >
-                        ← Continue Shopping
+                        Continue Shopping
                     </button>
                     <button className="checkout-btn" onClick={handleCheckout}>
-                        Checkout 💳
+                        Checkout
                     </button>
                 </div>
             </div>
@@ -145,7 +145,6 @@ function CartItem() {
             {showCheckoutModal && (
                 <div className="modal-overlay" onClick={closeModal}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <div className="modal-icon">🌱</div>
                         <h2>Coming Soon!</h2>
                         <p>
                             Our checkout feature is still growing.

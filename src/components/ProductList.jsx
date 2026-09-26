@@ -7,6 +7,9 @@ const IMAGES = [
   'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80',
   'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400&q=80',
   'https://images.unsplash.com/photo-1593691509543-c55fb32d8de5?w=400&q=80',
+  'https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80',
+  'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400&q=80',
+  'https://images.unsplash.com/photo-1593691509543-c55fb32d8de5?w=400&q=80',
 ];
 
 const PLANTS_DATA = [
@@ -15,11 +18,11 @@ const PLANTS_DATA = [
     category: 'Indoor Plants',
     plants: [
       { name: 'Monstera Deliciosa', imageIndex: 0, price: 24.99 },
-      { name: 'Snake Plant', imageIndex: 2, price: 18.99 },
-      { name: 'Peace Lily', imageIndex: 0, price: 22.50 },
-      { name: 'Pothos Golden', imageIndex: 1, price: 15.99 },
-      { name: 'Fiddle Leaf Fig', imageIndex: 0, price: 45.99 },
-      { name: 'Philodendron Heartleaf', imageIndex: 1, price: 19.99 },
+      { name: 'Snake Plant', imageIndex: 1, price: 18.99 },
+      { name: 'Peace Lily', imageIndex: 2, price: 22.50 },
+      { name: 'Pothos Golden', imageIndex: 3, price: 15.99 },
+      { name: 'Fiddle Leaf Fig', imageIndex: 4, price: 45.99 },
+      { name: 'Philodendron Heartleaf', imageIndex: 5, price: 19.99 },
     ],
   },
 
@@ -27,12 +30,12 @@ const PLANTS_DATA = [
   {
     category: 'Succulents',
     plants: [
-      { name: 'Aloe Vera', imageIndex: 1, price: 12.99 },
+      { name: 'Aloe Vera', imageIndex: 0, price: 12.99 },
       { name: 'Echeveria', imageIndex: 1, price: 9.99 },
-      { name: 'Jade Plant', imageIndex: 1, price: 14.50 },
-      { name: 'Haworthia Zebra', imageIndex: 2, price: 11.99 },
-      { name: 'String of Pearls', imageIndex: 0, price: 16.99 },
-      { name: "Burro's Tail", imageIndex: 1, price: 13.99 },
+      { name: 'Jade Plant', imageIndex: 2, price: 14.50 },
+      { name: 'Haworthia Zebra', imageIndex: 3, price: 11.99 },
+      { name: 'String of Pearls', imageIndex: 4, price: 16.99 },
+      { name: "Burro's Tail", imageIndex: 5, price: 13.99 },
     ],
   },
 
@@ -42,10 +45,10 @@ const PLANTS_DATA = [
     plants: [
       { name: 'Orchid Phalaenopsis', imageIndex: 0, price: 34.99 },
       { name: 'African Violet', imageIndex: 1, price: 13.50 },
-      { name: 'Anthurium Red', imageIndex: 0, price: 28.99 },
-      { name: 'Begonia Rex', imageIndex: 1, price: 21.99 },
-      { name: 'Hibiscus Tropical', imageIndex: 0, price: 32.50 },
-      { name: 'Gardenia Jasminoides', imageIndex: 2, price: 38.99 },
+      { name: 'Anthurium Red', imageIndex: 2, price: 28.99 },
+      { name: 'Begonia Rex', imageIndex: 3, price: 21.99 },
+      { name: 'Hibiscus Tropical', imageIndex: 4, price: 32.50 },
+      { name: 'Gardenia Jasminoides', imageIndex: 5, price: 38.99 },
     ],
   },
 
@@ -53,12 +56,12 @@ const PLANTS_DATA = [
   {
     category: 'Outdoor & Patio',
     plants: [
-      { name: 'Lavender', imageIndex: 1, price: 16.50 },
-      { name: 'Boxwood Topiary', imageIndex: 0, price: 42.99 },
-      { name: 'Hydrangea Blue', imageIndex: 0, price: 29.99 },
-      { name: 'Citrus Lemon Tree', imageIndex: 1, price: 49.99 },
-      { name: 'Rosemary Herb', imageIndex: 2, price: 11.50 },
-      { name: 'Japanese Maple', imageIndex: 0, price: 65.99 },
+      { name: 'Lavender', imageIndex: 0, price: 16.50 },
+      { name: 'Boxwood Topiary', imageIndex: 1, price: 42.99 },
+      { name: 'Hydrangea Blue', imageIndex: 2, price: 29.99 },
+      { name: 'Citrus Lemon Tree', imageIndex: 3, price: 49.99 },
+      { name: 'Rosemary Herb', imageIndex: 4, price: 11.50 },
+      { name: 'Japanese Maple', imageIndex: 5, price: 65.99 },
     ],
   },
 ];

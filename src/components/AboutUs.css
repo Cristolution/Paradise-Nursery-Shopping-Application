@@ -120,11 +120,6 @@
   transform: translateY(-4px);
 }
 
-.team-avatar {
-  font-size: 4rem;
-  margin-bottom: 8px;
-}
-
 .team-member h3 {
   margin: 8px 0 4px 0;
   color: #2c6e3f;
