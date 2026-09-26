@@ -1,0 +1,236 @@
+/* App.css — Styles for the Paradise Nursery landing page (and global app layout) */
+
+/* ===== GLOBAL STYLES ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== LANDING PAGE BACKGROUND ===== */
+/*
+   The BIG background image for the landing page.
+   Beautiful green forest/garden vibe with the company name on top.
+*/
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* The background image uses a beautiful green plant gradient */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)),
+    url('https://images.unsplash.com/photo-1463936575829-25148e1db1b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== FALLBACK BACKGROUND ===== */
+.landing-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1b4d3e 0%, #2c6e3f 40%, #4a8c4f 100%);
+  z-index: -1;
+}
+
+/* ===== LANDING CONTENT ===== */
+.landing-content {
+  text-align: center;
+  color: white;
+  padding: 60px 24px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 10 10 16px 10;
+  padding: 20px;
+  color: #ffffff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+.landing-content .tagline {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #d4f1c5;
+  font-style: italic;
+}
+
+.landing-content .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 36px;
+  color: #e8f5e9;
+  line-height: 1.6;
+}
+
+/* ===== GET STARTED BUTTON ===== */
+.get-started-btn {
+  background: linear-gradient(135deg, #6fb46d 0%, #2c6e3f 100%);
+  color: white;
+  border: none;
+  padding: 18px 48px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.get-started-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #7ec57c 0%, #3a8049 100%);
+}
+
+.get-started-btn:active {
+  transform: translateY(-1px);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(135deg, #1b4d3e 0%, #2c6e3f 100%);
+  color: white;
+  padding: 16px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d4f1c5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.navbar-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* CART ICON */
+.cart-icon-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff5252;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+.main-content {
+  flex: 1;
+  background: #f7faf5;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .landing-content h1 {
+    font-size: 2.5rem;
+  }
+  .landing-content .tagline {
+    font-size: 1.1rem;
+  }
+  .navbar {
+    padding: 12px 20px;
+  }
+  .navbar-links {
+    gap: 12px;
+  }
+  .navbar-links a {
+    font-size: 0.95rem;
+  }
+}
