@@ -55,19 +55,3 @@ Make sure you have **Node.js** (version 18 or higher) installed on your computer
 ```bash
 npm run build
 ```
-
-## 📂 Project Structure
-
-```
-src/
-├── App.jsx              # Main app with routing & landing page
-├── App.css              # Styles for landing page (background image)
-├── main.jsx             # Entry point (wraps app with Redux Provider)
-├── index.css            # Global styles
-├── CartSlice.jsx        # Redux slice for the shopping cart
-├── components/
-│   ├── Navbar.jsx       # Navigation bar with cart icon
-│   ├── ProductList.jsx  # Plant listing page with categories
-│   └── CartItem.jsx     # Shopping cart page
-└── assets/              # Images and icons
-```
